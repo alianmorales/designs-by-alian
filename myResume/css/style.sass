@@ -1,0 +1,228 @@
+@mixin iphone
+	@media only screen and (max-width: 480px)
+		@content
+
+$backgCol: #394146
+$redCol: #ff0000
+$grayCol: #8899a1
+$primary: #020202
+$play: 'Playfair Display', serif
+$rok: 'Rokkitt', serif
+$oswald: 'Oswald', sans-serif
+$mont: 'Montserrat', sans-serif
+$lighRed: #F00000
+$darkRed: #DC281E
+
+html, body
+	margin: 0
+	padding: 0
+
+body 
+	background: $backgCol
+	color: $primary
+	font-family: $rok
+	line-height: 1.3
+	font-size: 14px
+	width: 100%
+
+	h3
+		text-transform: uppercase
+		font-family: $oswald
+		font-weight: 300
+		letter-spacing: 2px
+		margin-top: 30px
+		font-size: 18px
+
+	a 
+		color: #fff
+		text-decoration: none
+		font-size: 16px
+
+	.icon
+		width: 30px
+		vertical-align: bottom
+
+	#wrapper
+		width: 850px
+		height: auto
+		background: #fff
+		margin: 0 auto
+		display: flex
+		flex-direction: row
+		-webkit-box-shadow: 0px 0px 33px -1px rgba(0,0,0,0.5)
+		-moz-box-shadow: 0px 0px 33px -1px rgba(0,0,0,0.5)
+		box-shadow: 0px 0px 33px -1px rgba(0,0,0,0.5)
+
+		aside
+			width: 35%
+			background: $lighRed
+			background: -webkit-linear-gradient(to right, $darkRed, $lighRed)
+			background: linear-gradient(to right, $darkRed, $lighRed)
+			color: #fff
+			font-weight: 300
+			padding: 25px
+			box-sizing: border-box
+
+			section#logo
+				text-align: center
+
+				img
+					width: 180px
+
+				header#top-headline
+					display: none
+
+					h1
+						font-family: $mont
+						font-size: 45px
+						text-transform: uppercase
+						font-weight: 800
+						line-height: 1
+						margin: 10px 0 0 0
+						text-shadow: 3px 3px 0px $redCol, 9px 9px 0px rgba(0, 0, 0, 0.2)
+
+					.title
+						h2
+							font-size: 22px
+							font-weight: 100
+
+						span.andPlay
+								font-family: $play
+				@include iphone
+					header#top-headline
+						display: block
+
+				ul#social-icons
+					list-style: none
+					text-align: left
+					padding: 0
+
+					li 
+						padding: 0
+
+						img.small-icon
+							width: 26px
+							vertical-align: middle
+							margin-bottom: 5px
+
+				@include iphone
+					ul#social-icons
+						li 
+							display: inline-block
+
+						li:last-child
+							width: 100%
+							text-align: center
+
+
+			section#expertise
+				ul
+					padding-left: 15px
+
+		@include iphone
+			aside
+				width: 100%
+
+		main 
+			width: 65%
+			box-sizing: border-box
+			padding: 25px
+
+			header#top-headline
+				position: relative
+
+				h1
+					font-family: $mont
+					font-size: 55px
+					text-transform: uppercase
+					font-weight: 900
+					line-height: 1
+					margin: 0
+					text-shadow: 3px 3px 0px #fff, 9px 9px 0px rgba(0, 0, 0, 0.1)
+
+				.title
+					position: absolute
+					top: 5px
+					right: 30px
+					border-left: 1px solid #000
+					padding-left: 20px
+
+					h2
+						font-family: $rok
+						font-size: 25px
+						font-weight: 400
+						line-height: .9
+						margin: 0
+
+						span.andPlay
+							font-family: $play
+							color: $grayCol
+
+			@include iphone
+				#top-headline
+					display: none
+
+			section#experience
+
+				h3
+					color: $redCol
+					font-weight: 400
+
+				.job
+					position: relative
+
+					h4
+						margin: 10px 0 0 0
+						line-height: .9
+						font-size: 18px
+						
+					small
+						color: $grayCol
+						font-size: 14px
+
+					ul
+						margin: 10px 0 0 0
+						padding-left: 18px
+
+						li a
+							color: $redCol
+							text-decoration: underline
+							font-size: 14px
+
+					.from-to
+						position: absolute
+						top: 0
+						right: 0
+
+						h4
+							font-size: 25px
+							font-weight: 400
+							margin: 0
+
+		@include iphone
+			main
+				width: 100%
+
+
+				header#top-headline
+					h1
+						font-size: 45px
+
+					.title
+						position: absolute
+						top: -12px
+						right: 0
+						border-left: 1px solid #000
+						padding-left: 20px
+
+						h2
+							font-size: 20px
+
+	@include iphone
+		#wrapper
+			width: 100%
+			flex-direction: column
+
+@include iphone
+	body
+		font-size: 16px

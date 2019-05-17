@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.000531818182 0 28.738125 0 28.738125 36.6409432 0.000531818182 36.6409432"></polygon>
+    </defs>
+    <g id="iPhone-8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-25.000000, -33.000000)">
+        <g id="Group" transform="translate(25.000000, 33.000000)">
+            <rect id="Rectangle" stroke="#000000" stroke-width="6" x="3" y="3" width="59" height="59"></rect>
+            <g id="Page-1" transform="translate(17.333333, 13.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M24.9667364,33.228 L6.55519091,33.228 L6.55519091,28.9176136 L14.9978045,28.9176136 L14.9978045,23.7097841 L11.76435,23.7097841 L11.76435,25.6841591 L3.23265682,25.6841591 L3.23265682,15.6261477 L17.8709523,15.6261477 L17.8709523,24.0674318 L24.9667364,24.0674318 L24.9667364,33.228 Z M8.62130455,3.77192045 L6.73467955,2.69365909 L6.6456,8.35220455 L0.000531818182,0 L0.000531818182,28.9176136 L3.32306591,28.9176136 L3.32306591,36.6409432 L28.7386568,36.6409432 L28.7386568,14.2793182 C28.7386568,14.2793182 12.5727136,6.01752273 8.62130455,3.77192045 Z" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
